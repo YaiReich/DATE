@@ -1,0 +1,15 @@
+        *************** Beginning of data *************************************
+0002.00   dcl-s today1 date(*usa);                                             
+0002.01   dcl-s today2 date(*iso);                                             
+0002.02   dcl-s wdate1 packed(8:0) inz(02072023);                              
+0002.03   dcl-s wdate2 packed(8:0) inz(20230702);                              
+0003.00     today1 = %date(wdate1 : *usa);                                     
+0003.01     today2 = %date(wdate2 : *iso);                                     
+0004.00     dsply today1;                                                      
+0004.01     dsply today2;                                                      
+0005.00   *INLR=*ON;                                                           
+        ****************** End of data ****************************************
+
+%date function Example(3) - Convert numeric value to Date
+DSPLY  01/03/2017 
+DSPLY  2017-03-01 
