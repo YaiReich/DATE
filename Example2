@@ -1,0 +1,9 @@
+        *************** Beginning of data ************************************* 
+0002.00   dcl-s today date;                                                     
+0002.01   dcl-s wdate packed(8:0) inz(20230702);                                
+0003.00     today = %date(wdate);                                               
+0004.00     dsply today;                                                        
+0005.00   *INLR=*ON;                                                            
+        ****************** End of data **************************************** 
+
+%date function Example(2) - Convert numeric value to Date
